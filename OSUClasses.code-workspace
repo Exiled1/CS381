@@ -20,7 +20,20 @@
 		},
 		{
 			"path": "E:\\MonitoR"
+		},
+		{
+			"path": "..\\C-Craft"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"structures.h": "c",
+			"vector.h": "c",
+			"hash_map": "c",
+			"hash_set": "c",
+			"ctype.h": "c",
+			"stdio.h": "c"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "CS340"
+	}
 }
