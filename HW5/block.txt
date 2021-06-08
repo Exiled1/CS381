@@ -1,0 +1,48 @@
+Exercise 1. Runtime Stack
+
+1: [x:?]
+2: [z:?, x:?]
+3: [z:1, x:?]
+4: [f:{}, z:1, x:?]
+Skip til function is called...
+11: >> f(2)
+    [x:2,f:{},z:1,x:?]
+    8: >> f(1) * z:1 + 1
+        [x:1, f:{}, z:1, x:?]
+        8: >> f(0) * z:1 + 1
+            [x:0, f:{}, z:1, x:?]
+            8: >> 
+                4: [x:0, f:{},z:1,x:?]
+                6: [res:1,x:0,f:{},z:1,x:?]
+            << res:1
+        8: [x:1,f:{},z:2,x:?]
+        9: [res:2,x:1,f:{},z:2,x:?]
+    << res:2, z: 2 * z:2 + 1
+    8: [x:2,f:{},z:5,x:?]
+    9: [res:5, x:2, f:{}, z:5, x:?]
+<< res:5
+After 11: [f:{},z:5, x:5]
+
+Exercise 2: 
+
+a.  33
+b.  26
+
+Exercise 3: Parameter Passing
+
+a:
+    y = 54
+    z = 112
+b:
+    y = -14
+    z = -28
+
+
+
+
+
+
+
+
+
+
